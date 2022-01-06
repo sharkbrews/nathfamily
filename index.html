@@ -22,7 +22,8 @@
     gtag('config', 'G-3KZPEV8QXN');
     </script>
   </head>
-  <body>
+  <body onLoad = "loadHandler()">
+    <div id="loader"></div>
     <h1 class="home__brand_title"><a href = "index.html" >NathFamily</a></h1>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -52,12 +53,12 @@
           <div class="row">
             <div class="col-lg-6 home__left">
               <div class="home__container_content">
-                      <h1 style="line-height: 1; font-size: 2.1rem;">Power To The</h1>
-                      <h1 style="margin-bottom: 8%;">Uncelebrated Innovation.</h1>
+                      <h1 class="fh1">Power To The</h1>
+                      <h1 class="sh1">Uncelebrated Innovation.</h1>
                       <p >We have the initiative to spur entrepreneurship across emerging economies and uplift the people around the world through it.
                       </p>
                       <br>
-                      <a href="about.html" class="link__btn"><button class="home__btn">Know More &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
+                      <a href="about.html" class="submit__btn"><button class="home__btn">Know More &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
                     </div>
                   </div>
                   <div class="col-lg-6 home__right">
@@ -70,7 +71,7 @@
       </section>
       </div>
       <div class = "home__features">
-        <div class="row feature1">
+        <div class="row feature1 ft1lap">
           <div class="col-lg-6 push_sec1">
             <img src= "files/images/landing.png" class="push__img">
           </div>
@@ -80,6 +81,17 @@
             We invest in young hearts with the wildest of ideas, right at the beginning. 
           </p>
         </div>
+        </div>
+        <div class="row feature1 ft1mob">
+          <div class="col-lg-6 push_sec2 ">
+          <h2>Pushing The Limits Of Those, <br> Who Dare To Dream!</h2>
+          <p>
+            We invest in young hearts with the wildest of ideas, right at the beginning. 
+          </p>
+        </div>
+          <div class="col-lg-6 push_sec1">
+            <img src= "files/images/landing.png" class="push__img">
+          </div>
         </div>
         <div class="row feature2">
            <div class="feature2_head"  style= "margin-bottom: 4%;">
@@ -158,10 +170,10 @@
         </div>
         <div class="icons__bottom">
           <div class="row">
-            <div class="col-lg-3">• We do not teach</div>
+            <div class="col-lg-3">• We are your biggest supporters</div>
             <div class="col-lg-3">• We are enablers</div>
             <div class="col-lg-3">• We are extended families</div>
-            <div class="col-lg-3">• We are your biggest supporters</div>
+            <div class="col-lg-3">• We do not teach</div>
           </div>
         </div>
       </div>
@@ -173,7 +185,7 @@
             <p>
               We pave the way for big, bold ideas and we’re proud to be fuelling up this innovative spirit. It’s a journey that starts with big ideas, but that’s just the beginning. It requires a commitment to do whatever it takes to move forward. A commitment to share, to learn and to grow. It’s a commitment we make everyday and therefore we’re looking for world-class founders attacking large markets and solving real life problems who are ready to join us.
             </p>
-            <a href="about.html" class="link__btn"><button class="ftr__btn">Know More</button></a>
+            <a href="about.html" class="link__btn"><button class="ftr__btn">Know More &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
           </div>
           </div>
         </div>
@@ -183,5 +195,11 @@
       <p>© 2022 Nath Family Trust Fund | All rights reserved.</p>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      var preLoader = document.getElementById('loader');
+      setTimeout(function() {
+        preLoader.style.display = 'none'
+    }, 3000);
+    </script>
   </body>
 </html>

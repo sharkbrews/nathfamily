@@ -14,7 +14,8 @@
     <script src="https://kit.fontawesome.com/2728698433.js" crossorigin="anonymous"></script>
 
   </head>
-  <body>
+  <body onLoad = "loadHandler()">
+    <div id="loader"></div>
     <h1 class="home__brand_title"><a href = "index.html" >NathFamily</a></h1>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -49,7 +50,7 @@
                     <p style="font-size: 1.13rem;">Are you an aspiring entrepreneur, early-stage startup founder or a potential partner? If yes, then pitch us your vision and be a part of the revolution. 
                     </p>
                     <br>
-                  <a target = "_blank" href="https://forms.gle/b3CPgDkQsoCyGWi96" class="link__btn"><button class="home__btn">Submit A Pitch &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
+                  <a target = "_blank" href="https://forms.gle/b3CPgDkQsoCyGWi96" class="submit__btn"><button class="home__btn">Submit A Pitch &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
 
                   </div>
                 </div>
@@ -70,5 +71,11 @@
       <p>© 2022 Nath Family Trust Fund | All rights reserved.</p>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      var preLoader = document.getElementById('loader');
+      setTimeout(function() {
+        preLoader.style.display = 'none'
+    }, 1500);
+    </script>
 </body>
 </html>

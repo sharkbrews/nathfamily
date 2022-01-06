@@ -1,7 +1,10 @@
 @media only screen and (max-width: 991px) {
   /* Home  */
-  .home__left .home__container_content h1 {
-    font-size: 1.8rem;
+  .home__left .home__container_content .fh1 {
+    font-size: 1.5rem;
+  }
+  .home__left .home__container_content .sh1 {
+    font-size: 1.9rem;
   }
   .home__container_content > p {
     font-size: 1rem;
@@ -126,7 +129,8 @@
   .ready {
     padding: 5%;
   }
-  .events__bg {
+  #events {
+    overflow: none;
     height: 100vh;
   }
   .events__img {
@@ -166,5 +170,14 @@
     justify-content: end;
     text-align: left;
     justify-content: end;
+  }
+  .ft1lap {
+    display: none;
+  }
+  .ft1mob {
+    display: block;
+  }
+  .feature1 {
+    text-align: center;
   }
 }

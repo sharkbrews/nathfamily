@@ -14,7 +14,8 @@
     <script src="https://kit.fontawesome.com/2728698433.js" crossorigin="anonymous"></script>
 
   </head>
-  <body>
+  <body onLoad = "loadHandler()">
+    <div id="loader"></div>
     <h1 class="home__brand_title"><a href = "index.html" >NathFamily</a></h1>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -76,9 +77,9 @@
     <div class="container">
     <p>We believe that entrepreneurs hold the keys to the greatest challenges of our time. They see opportunities. They take risks. And they create a path for a sustainable life now and in the future by building tomorrow’s companies today. They are the ultimate agents of positive, transformational change across every aspect of our society and economy and hence easy availability of capital is essential for entrepreneurs at the early stages of growth of an enterprise.
       <br>
-      We believe Youth Entrepreneurship has an impact on social as well as cultural and economic progress of the society hence if promoted actively, they can help sustain the growing economies of now.
+      We believe <strong >Youth Entrepreneurship</strong> has an impact on social as well as cultural and economic progress of the society hence if promoted actively, they can help sustain the growing economies of now.
       <br>
-      We believe Women Entrepreneurs are a significant part of the global expedition for sustained economic development and social progress as women-owned businesses enterprises have led to an upswing change in the demographic characteristics of business and economies in the recent times.
+      We believe <strong>Women Entrepreneurs</strong> are a significant part of the global expedition for sustained economic development and social progress as women-owned businesses enterprises have led to an upswing change in the demographic characteristics of business and economies in the recent times.
     </p>
   </div>
   </div>
@@ -135,5 +136,11 @@
       <p>© 2022 Nath Family Trust Fund | All rights reserved.</p>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      var preLoader = document.getElementById('loader');
+      setTimeout(function() {
+        preLoader.style.display = 'none'
+    }, 1500);
+    </script>
 </body>
 </html>
