@@ -1,82 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nath Family Trust Fund</title>
-    <link rel="shortcut icon" href="files/images/favicon.ico" type="image/x-icon">
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/phone.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- ========================================= Css files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="https://kit.fontawesome.com/2728698433.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  </head>
-  <body onLoad = "loadHandler()">
+</head>
+
+<body class="content_body_green">
+
+    <!-- <body class="content_body_green"> -->
     <div id="loader"></div>
-    <h1 class="home__brand_title"><a href = "index.html" >NathFamily</a></h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link__signup active" aria-current="page" href="raise.html">Raise Funds</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section id="raise">
-      <div class = "raise__container">
-        <div class="row">
-          <div class="col-lg-6 raise__left">
-            <div class="raise__container_content">
-                    <h1>Looking</h1>
-                    <h1 style="margin-bottom: 7%;">For Funding ?</h1>
-                    <p style="font-size: 1.13rem;">Are you an aspiring entrepreneur, early-stage startup founder or a potential partner? If yes, then pitch us your vision and be a part of the revolution. 
-                    </p>
-                    <br>
-                  <a target = "_blank" href="https://forms.gle/b3CPgDkQsoCyGWi96" class="submit__btn"><button class="home__btn">Submit A Pitch &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
+    <div class="mb_wrap">
+        <div class="mb-overlay">
+            <div class="mb-overlay-bg"></div>
+            <div class="mb-menu">
+                <div class="close">
+                    <ion-icon class="close-mb-menu" name="close-outline"></ion-icon>
+                </div>
+                <!-- your list menu in mobile here -->
+                <ul>
 
-                  </div>
-                </div>
-                <div class="col-lg-6 raise_right">
-                  <div class="raise__container_content">
-                    <h1>We would to love to hear about it.
-                      </h1>
-                      <h1 style="color: #00715D;">Seriously!
-                        </h1><h1>
-                      Start your journey forward. Take the first step.
-                  </h1>
-                  </div>
-                </div>
-              </div>
+                    <!-- ======================== top link -->
+                    <li class="nav-item -0 has-submenu">
+                        <a href="index.html" class="menu-link main-menu-link item-title " data-aos="fade-right"
+                            data-aos-delay="50"><span class="">Home</span>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+                    <li class="nav-item -0 has-submenu">
+                        <a href="about.html" class="menu-link main-menu-link item-title" data-aos="fade-right"
+                            data-aos-delay="100"><span class="">About</span>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+
+                    <li class="nav-item -0 has-submenu">
+                        <a href="event.html" class="menu-link main-menu-link item-title" data-aos="fade-right"
+                            data-aos-delay="150"><span class="">Events</span>
+                            <div class="has-submenu-icon"></div>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+
+                    <li class="nav-item -0 has-submenu">
+                        <a href="contact.html" class="menu-link main-menu-link item-title" data-aos="fade-right"
+                            data-aos-delay="200"><span class="">Contact Us</span>
+                            <div class="has-submenu-icon"></div>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+
+                    <li>
+                        <!-- ============== link -->
+                        <a href="raise.html" class="btn btn-orange btn-sm d-none d-md-block" data-aos="fade-right"
+                            data-aos-delay="250"> Raise Funds </a>
+                    </li>
+
+                </ul>
+
             </div>
-    </section>
-    <section id="footer">
-      <p>© 2022 Nath Family Trust Fund | All rights reserved.</p>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </div>
+    </div>
+    <!-- =========================== header-->
+    <div class="hero has_style1">
+        <!-- ================================= header -->
+        <div class="site-header has_link_dark">
+            <header id="masthead" class="site-header header-3 both-types no-transition">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="header-wrap-inner">
+                            <div class="left-part">
+                                <!-- .site-branding -->
+                                <div class="site-branding">
+                                    <div class="site-title">
+                                        <a href="index.html" data-aos="fade-right">
+                                            <div class="logo">
+                                                <h3> NathFamily</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================ right part -->
+                            <div class="right-part right">
+                                <nav id="site-navigation" class="main-nav with-counters visible">
+                                    <div class="mbl-overlay ">
+                                        <!-- Navigation -->
+                                        <div id="mega-menu-wrap" class="main-nav-container" role="navigation">
+                                            <ul id="primary-menu" class="menu">
+                                                <!-- ======================== top link -->
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="index.html" class="menu-link main-menu-link item-title "
+                                                        data-aos="fade-right" data-aos-delay="50"><span
+                                                            class="">Home</span>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="about.html" class="menu-link main-menu-link item-title"
+                                                        data-aos="fade-right" data-aos-delay="100"><span
+                                                            class="">About</span>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="event.html" class="menu-link main-menu-link item-title"
+                                                        data-aos="fade-right" data-aos-delay="150"><span
+                                                            class="">Events</span>
+                                                        <div class="has-submenu-icon"></div>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="contact.html" class="menu-link main-menu-link item-title"
+                                                        data-aos="fade-right" data-aos-delay="200"><span
+                                                            class="">Contact Us</span>
+                                                        <div class="has-submenu-icon"></div>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </nav>
+                                <!-- Fullscreen -->
+                                <div class="clb-hamburger btn-round btn-round-light" tabindex="1">
+                                    <div class="navbar-menu">
+                                        <a href="raise.html" class="btn btn-orange btn-sm d-none d-md-block"
+                                            data-aos="fade-right" data-aos-delay="250"> Raise Funds </a>
+                                    </div>
+                                    <div class="mb_wrap">
+                                        <div class="burger">
+                                            <div class="menu-toggle-icon">
+                                                <div class="cb-menu-toggle">
+                                                    <div class="menu">
+                                                        <input type="checkbox">
+                                                        <div class="line-menu"></div>
+                                                        <div class="line-menu"></div>
+                                                        <div class="line-menu"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="spacer_header"></div>
+        <div class="container">
+            <div class="hero-wrap">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-6 mb-3 verticle-center">
+                        <img src="assets/images/raise.svg" width="100%" alt="Raise funds">
+                    </div>
+
+                    <div class="col-lg-6 verticle-center mb-3">
+                        <h2 class="text-primary" data-aos="fade-right" data-aos-delay="300">
+                            We Are Committed to Help Uncelebrated Talents.
+                        </h2>
+                        <br>
+                        <p data-aos="fade-right" data-aos-delay="350">
+                            It's a journey that starts with big ideas, but that's just the beginning. It requires a
+                            commitment to do whatever it takes to move forward.
+                            A commitment we make every day and we're looking for visionary builders who are ready to
+                            join us.
+                        </p>
+
+
+                        <div class="row d-flex align-items-center justify-content-center mt-4">
+                            <div class="col-sm-6">
+                                <ul class="list my-2">
+                                    <li class="list__pricing"><img src="assets/images/icons/tick.svg" class="mr-3 my-3"
+                                            alt="check">Planning</li>
+                                    <li class="list__pricing"><img src="assets/images/icons/tick.svg" class="mr-3 my-3"
+                                            alt="check">Research</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list">
+                                    <li class="list__pricing"><img src="assets/images/icons/tick.svg" class="mr-3 my-3"
+                                            alt="check">Optimizing</li>
+                                    <li class="list__pricing"><img src="assets/images/icons/tick.svg" class="mr-3 my-3"
+                                            alt="check">Results</li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <section class="section  is-sm section-yellow">
+            <div class="container position-relative">
+                <!-- <div class="object object_1 ">
+                    <img src="assets/images/icons/1.png" alt="">
+                </div> -->
+                <!-- <div class="object object_2 ">
+                    <img src="assets/images/icons/2.png" alt="">
+                </div> -->
+                <div class="object object_3 ">
+                    <!-- <img src="assets/images/icons/3.png" alt=""> -->
+                </div>
+                <div class="object object_4 ">
+                    <img src="assets/images/icons/4.png" alt="">
+                </div>
+                <div class="plan-single">
+
+                    <div class="">
+                        <div class="row d-flex align-items-center justify-content-center overflow-hidden">
+
+                            <div class="col-lg-6 mb-5 mb-lg-0 verticle-center mb-xl-0">
+                                <div class="section-head">
+                                    <h2 class="text-primary hero-title" data-aos="fade-right" data-aos-delay="300">
+                                        Looking for Funding ?
+                                    </h2>
+                                    <p data-aos="fade-right" data-aos-delay="350">
+                                        Are you an aspiring entrepreneur, early-stage startup founder or a potential
+                                        partner? If
+                                        yes, then pitch us your vision and be a part of the revolution.
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center justify-content-md-start  ">
+
+                                        <a href="https://forms.gle/b3CPgDkQsoCyGWi96" target="_blank"
+                                            class="btn btn-orange" data-aos="fade-up" data-aos-delay="400">
+                                            Submit a Pitch &nbsp; <i class="fas-animate fas fa-long-arrow-alt-right"
+                                                aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 verticle-center text-left overflow-hidden aos-init aos-animate"
+                                data-aos="fade-up" data-aos-duration="4000">
+
+                                <h3 data-aos="fade-right" data-aos-delay="350">
+                                    We would to love to hear <br> about it. 
+                                </h3>
+                                <br>
+                                <h3>
+                                    <span class="text-primary"> Seriously!</span>
+                                </h3>
+                                <br>
+                                
+                                <h3 data-aos="fade-right" data-aos-delay="350">
+                                    Start your journey <br> forward. Take the first <br> step.
+                                </h3>
+                            </div>
+
+                        </div>
+                        <!-- .row -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+
+    <!-- =========================== Footer-->
+    <footer class="footer has-style1">
+
+
+        <div class="footer-body">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="footer-desc">
+                            <div class="logo">
+                                <h3 class="text-white">NathFamily</h3>
+                            </div>
+                            <p class="text-white">We founded Nath Family Trust Fund with the strong belief that
+                                exceptional
+                                talent can come from anywhere in the world, and it's a belief that remains
+                                deep-rooted
+                                in our DNA and in our actions. </p>
+                            <div class="social-footer">
+                                <a class="text-white" href="#"><i class="fas fa-envelope-open">&nbsp;&nbsp;</i><a
+                                        style="color: white" href="mailto:info@sfmc.us">info@sfmc.us</a>
+                                    <!-- <a class="text-white" href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i></a>
+                            <a class="text-white" href="#"><i class="fab fa-linkedin-in">&nbsp;&nbsp;</i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h6 class="list-title">Company</h6>
+                        <ul class="list-items">
+                            <li> <a href="about.html">About</a> </li>
+                            <li> <a href="contact.html">Contact Us</a> </li>
+                            <!-- <li> <a href="#">Contact us</a> </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6">
+                        <h6 class="list-title">Userful Links</h6>
+                        <ul class="list-items">
+                            <li> <a href="raise.html">Raise Funds</a> </li>
+                            <li> <a href="event.html">Events</a> </li>
+                            <!-- <li> <a href="#">Cookies</a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright text-center "> Copyright © 2022 | Nath Family Trust Fund | All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ====================================== js files  -->
+    <script src="assets/js/plugins/jQuery.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/typed.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+
+    <script src="https://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+
+
+
+    <script src="assets/js/main.js"></script>
+
+
     <script>
-      var preLoader = document.getElementById('loader');
-      setTimeout(function() {
-        preLoader.style.display = 'none'
-    }, 1500);
+        var preLoader = document.getElementById('loader');
+        setTimeout(function () {
+            preLoader.style.display = 'none'
+        }, 3000);
     </script>
+
+
+    <!-- <script>
+        // ============================ 3/ call the slick functions
+        $('.client_slick').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+
+        });
+    </script> -->
+
+    <script>
+        $(function () {
+            AOS.init();
+        });
+    </script>
+
 </body>
+
+
 </html>

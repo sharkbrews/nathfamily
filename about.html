@@ -1,148 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nath Family Trust Fund</title>
-    <link rel="shortcut icon" href="files/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/phone.css">
+    <!-- ========================================= Css files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="https://kit.fontawesome.com/2728698433.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  </head>
-  <body onLoad = "loadHandler()">
+    <style>
+        .box.has-style2 {
+            min-height: 535px !important;
+        }
+    </style>
+</head>
+
+
+<body>
     <div id="loader"></div>
-    <h1 class="home__brand_title"><a href = "index.html" >NathFamily</a></h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link__signup" href="raise.html">Raise Funds</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> 
-    <section id="about">
-      <div class="about__container">
-        <div class="aboutus__content" style="padding-top: 8%;">
-          <div class="row">
-            <div class="col-lg-6" style="display: flex; flex-direction: column; text-align: center;">
-              <h1 class="h1_about" style="color: black;">About Us</h1>
-              <h1 class="h1_aboutsite" style="color: #0B6051;">Nathfamily.us</h1>
+    <div class="mb_wrap">
+        <div class="mb-overlay">
+            <div class="mb-overlay-bg"></div>
+            <div class="mb-menu">
+                <div class="close">
+                    <ion-icon class="close-mb-menu" name="close-outline"></ion-icon>
+                </div>
+                <!-- your list menu in mobile here -->
+                <ul>
+
+                    <!-- ======================== top link -->
+                    <li class="nav-item -0 has-submenu">
+                        <a href="index.html" class="menu-link main-menu-link item-title " data-aos="fade-right"
+                            data-aos-delay="50"><span class="">Home</span>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+                    <li class="nav-item -0 has-submenu">
+                        <a href="about.html" class="menu-link main-menu-link item-title" data-aos="fade-right"
+                            data-aos-delay="100"><span class="">About</span>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+
+                    <li class="nav-item -0 has-submenu">
+                        <a href="event.html" class="menu-link main-menu-link item-title" data-aos="fade-right"
+                            data-aos-delay="150"><span class="">Events</span>
+                            <div class="has-submenu-icon"></div>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+
+                    <li class="nav-item -0 has-submenu">
+                        <a href="contact.html" class="menu-link main-menu-link item-title" data-aos="fade-right"
+                            data-aos-delay="200"><span class="">Contact Us</span>
+                            <div class="has-submenu-icon"></div>
+                        </a>
+                    </li>
+                    <!-- ======================== top link -->
+
+                    <li>
+                        <!-- ============== link -->
+                        <a href="raise.html" class="btn btn-orange btn-sm d-none d-md-block" data-aos="fade-right"
+                            data-aos-delay="250"> Raise Funds </a>
+                    </li>
+
+
+                </ul>
+
             </div>
-            <div class="col-lg-6">
-              <p style="color: black;">We founded Nath Family Trust Fund with the strong belief that exceptional talent can come from anywhere in the world, and it’s a belief that remains deep-rooted in our DNA and in our actions. We believe eminent people are the driver behind great success which is why we’re proud to be the first investor into some of the world’s most impactful people building companies who are truly democratising access to fast-moving technologies and services. We focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-            </div>
-          </div>
         </div>
-        <div class="about__img_container">
-          <img src="files/images/about.png" alt="about-img" class="about__img">
-        </div>
-      </div>
-      <div class="about__bottom" style="padding-top: 4%;">
-      <div class="about__investment">
-        <div class="about__investment cardx">
-          <h1>Creating An Impact</h1>
-          <div class="container">
-          <p>We tend maximize our efforts when we find people with extraordinary ideas or vice versa. We move decisively, and focus our capital on supporting and investing in the shared future of tomorrow. Our funds centre around two macro themes: the growth of the creative class, and the concept of the collaborative economy. These two forces present a significant opportunity for new technologies, products, and services to transform how we do business and the way we live.</p>
-        </div>
-        </div>
-        <div class="about__investment cardx">
-          <h1>What Makes Us Different?</h1>
-          <div class="container">
-          <p> Nath Family Trust Fund symbolises humanitarianism and personify the prodigious force that advances new frontiers of social and economic development.</p>
-        </div>
-  </div>
-  <div class="about__investment cardx">
-    <h1>What We Believe In?
-    </h1>
-    <div class="container">
-    <p>We believe that entrepreneurs hold the keys to the greatest challenges of our time. They see opportunities. They take risks. And they create a path for a sustainable life now and in the future by building tomorrow’s companies today. They are the ultimate agents of positive, transformational change across every aspect of our society and economy and hence easy availability of capital is essential for entrepreneurs at the early stages of growth of an enterprise.
-      <br>
-      We believe <strong >Youth Entrepreneurship</strong> has an impact on social as well as cultural and economic progress of the society hence if promoted actively, they can help sustain the growing economies of now.
-      <br>
-      We believe <strong>Women Entrepreneurs</strong> are a significant part of the global expedition for sustained economic development and social progress as women-owned businesses enterprises have led to an upswing change in the demographic characteristics of business and economies in the recent times.
-    </p>
-  </div>
-  </div>
-  <div class="about__investment cardx">
-    <h1>Our Mission</h1>
-    <div class="container">
-    <p>Nath Family Trust Fund envisages building a robust Start-up ecosystem in the emerging economies of the world, for nurturing innovation and providing opportunities to budding entrepreneurs who in turn will help in creating companies that will fundamentally shift the way we live today.
-    </p>
-  </div>
-  </div>
-  <div class="about__investment cardx">
-    <h1>Where we invest ?</h1>
-    <div class="container">
-    <p>Great ideas can literally come from anywhere in the world. This means beyond Silicon Valley, even beyond the developed countries. Hence we aim at creating opportunities in neglected communities across the globe which incorporates emerging nations, youth and women. </p>
-  </div>
-  </div>
-      <div class="about__investment cardx" style="margin-bottom: 1%;">
-        <h1>Our Investment Philosophy</h1>
-        <div class="container">
-        <p>We believe in active, engaged, and responsible investment management that drives young entrepreneurs towards more socially responsible, ethical, and sustainable practices. 
-        </p>
-      </div>
-      </div>
     </div>
-      <div class="container features__container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="features">
-            <i class="fas fa-project-diagram"></i>
-            <h3>Explore</h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col__center">
-            <div class="features">
-            <i class="fas fa-gem"></i>
-            <h3>Invest</h3>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features">
-            <i class="fas fa-chart-line"></i>
-            <h3>Grow</h3>
-            </div>
-          </div>
+
+    <!-- =========================== header-->
+    <div class="hero has_style_deco">
+        <!-- ================================= header -->
+        <div class="site-header has_link_dark">
+            <header id="masthead" class="site-header header-3 both-types no-transition">
+                <div class="container">
+                    <div class="header-wrap">
+                        <div class="header-wrap-inner">
+                            <div class="left-part">
+                                <!-- .site-branding -->
+                                <div class="site-branding">
+                                    <div class="site-title">
+                                        <a href="index.html" data-aos="fade-right">
+                                            <div class="logo">
+                                                NathFamily
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================ right part -->
+                            <div class="right-part right">
+                                <nav id="site-navigation" class="main-nav with-counters visible">
+                                    <div class="mbl-overlay ">
+                                        <!-- Navigation -->
+                                        <div id="mega-menu-wrap" class="main-nav-container" role="navigation">
+                                            <ul id="primary-menu" class="menu">
+                                                <!-- ======================== top link -->
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="index.html" class="menu-link main-menu-link item-title "
+                                                        data-aos="fade-right" data-aos-delay="50"><span
+                                                            class="">Home</span>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="about.html" class="menu-link main-menu-link item-title"
+                                                        data-aos="fade-right" data-aos-delay="100"><span
+                                                            class="">About</span>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="event.html" class="menu-link main-menu-link item-title"
+                                                        data-aos="fade-right" data-aos-delay="150"><span
+                                                            class="">Events</span>
+                                                        <div class="has-submenu-icon"></div>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+
+                                                <li class="nav-item -0 has-submenu">
+                                                    <a href="contact.html" class="menu-link main-menu-link item-title"
+                                                        data-aos="fade-right" data-aos-delay="200"><span
+                                                            class="">Contact Us</span>
+                                                        <div class="has-submenu-icon"></div>
+                                                    </a>
+                                                </li>
+                                                <!-- ======================== top link -->
+
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </nav>
+                                <!-- Fullscreen -->
+                                <div class="clb-hamburger btn-round btn-round-light" tabindex="1">
+                                    <div class="navbar-menu">
+                                        <a href="raise.html" class="btn btn-orange btn-sm d-none d-md-block"
+                                            data-aos="fade-right" data-aos-delay="250"> Raise Funds </a>
+                                    </div>
+                                    <div class="mb_wrap">
+                                        <div class="burger">
+                                            <div class="menu-toggle-icon">
+                                                <div class="cb-menu-toggle">
+                                                    <div class="menu">
+                                                        <input type="checkbox">
+                                                        <div class="line-menu"></div>
+                                                        <div class="line-menu"></div>
+                                                        <div class="line-menu"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </div>
-      </div>
-      <div class="ready">
-        <h1>Ready to take the first step?</h1>
-        <a href="raise.html" class="link__btn"><button class="about__btn">Get Started &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button></a>
-        
-      </div>
+        <div class="spacer_header"></div>
+        <div class="container">
+            <div class="hero-wrap">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 verticle-center">
+                        <h2 class="hero-title" data-aos="fade-right" data-aos-delay="300">
+                            About
+                        </h2>
+                        <p class="hero-desc" data-aos="fade-right" data-aos-delay="350">
+                            We founded Nath Family Trust Fund with the strong belief that exceptional talent can come
+                            from anywhere in the world,
+                            and it's a belief that remains deep-rooted in our DNA and in our actions. We believe eminent
+                            people are the driver behind
+                            great success which is why we're proud to be the first investor into some of the world's
+                            most impactful people building companies
+                            who are truly democratising access to fast-moving technologies and services.
+                            We focus on markets where technology, innovation, and capital can unlock long-term value and
+                            drive economic growth.
+                        </p>
+                        <!-- <div class="d-flex justify-content-center justify-content-md-start  ">
+                            <a href="about.html" class="btn btn-primary " data-aos="fade-up" data-aos-delay="400">
+                                Know More<ion-icon name="arrow-forward"></ion-icon>
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-6 verticle-center overflow-hidden">
+                        <div class="img_wrap" data-aos="fade-left" data-aos-delay="450">
+                            <img class="m-4 home__landing_img vert-move" src="assets/images/about.svg"
+                                alt="landing-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section is-sm">
+        <div class="container">
+
+            <div class="row flex vcenter">
+
+                <div class="col-md-6 py-5">
+                    <div class="img_wrap" data-aos="fade-up" data-aos-delay="450">
+                        <img class="moveUpDown home__landing_img" width="100%" src="assets/images/mission.svg"
+                            alt="landing-image">
+                    </div>
+                </div>
+
+                <div class="col-md-6 verticle-center">
+                    <div class="section-head mb-lg-0">
+
+                        <h2 class="text-primary section-title" style="max-width: none">Our Mission
+                        </h2>
+                        <p class="section-desc">
+                            Nath Family Trust Fund envisages building a robust Start-up ecosystem in the
+                            emerging economies of the world, for nurturing
+                            innovation and providing opportunities to budding entrepreneurs who in turn
+                            will help in creating companies that will fundamentally shift the way we
+                            live today.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="footer">
-      <p>© 2022 Nath Family Trust Fund | All rights reserved.</p>
+
+
+    <div class="section is-sm pt-0">
+        <div class="container py-4">
+         
+            <!-- <h3 style="font-weight: 600;" class="text-center">
+              <span style="background-image: url('assets/images/icons/5.png');background-size: contain;
+              background-repeat: no-repeat;
+              background-position: inherit;">&nbsp;&nbsp;</span>We believe that entrepreneurs <br> are the lifeblood of progress, <br> and we exist to help them
+                <br> realize their visions for <br> a better world.
+            </h3> -->
+            <div class="col-lg-6 mx-auto">
+<img src="assets/images/Texty.svg" width="100%" class="mx-auto" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section  pt-0">
+        <div class="container">
+
+            <div class="row flex vcenter">
+
+                <div class="col-md-12 py-5">
+                    <div class="section-head mb-lg-0">
+
+                        <h2 class="text-primary section-title" style="text-align: center;max-width: none">What We
+                            Believe In?</h2>
+                        <p class="section-desc">
+                            We believe that entrepreneurs hold the keys to the greatest challenges of our time. They see
+                            opportunities.
+                            They take risks. And they create a path for a sustainable life now and in the future by
+                            building tomorrow's
+                            companies today. They are the ultimate agents of positive, transformational
+                            change across every aspect of our society and economy and hence easy availability of capital
+                            is essential
+                            for entrepreneurs at the early stages of growth of an enterprise.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+    <section class="section is-sm section-about-frame">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6">
+                    <img class="" src="assets/images/youth_.svg" width="100%" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 verticle-center">
+
+                    <p class="section-desc">
+                        We believe <strong>Youth Entrepreneurship</strong> has an impact on social as well as
+                        cultural and
+                        economic progress of the society hence if promoted actively, they can help sustain the
+                        growing economies
+                        of now.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <div class="col-lg-6 col-md-6 verticle-center">
+
+                    <p class="section-desc">
+                        We believe <strong>Youth Entrepreneurship</strong> has an impact on social as well as
+                        cultural and
+                        economic progress of the society hence if promoted actively, they can help sustain the
+                        growing economies
+                        of now.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <img class="" src="assets/images/women.svg" width="100%" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section is-sm">
+        <div class="mx-5">
+            <div class="bg_back_wrap pt-100 ">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                        <div class="heading text-center wow fadeInUp"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <h2 class="text-black mb-16">What Makes Us Different?</h2>
+                            <p class="text-18 text-gray mb-0">Nath Family Trust Fund symbolises humanitarianism and
+                                personify the prodigious
+                                force that advances new frontiers of social and economic development.</p>
+                        </div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="box has-style2" data-aos="fade-up" data-aos-duration="4000">
+                                        <div class="box-icon">
+                                            <i class="ri-refund-2-line"></i>
+                                        </div>
+                                        <h4 class="box-title"> Where We Invest ?
+
+                                        </h4>
+                                        <p class="box-desc">
+                                            Great ideas can literally come from anywhere in the world. This means beyond
+                                            Silicon Valley, even beyond the developed countries.
+                                            Hence we aim at creating opportunities in neglected communities across the
+                                            globe which incorporates emerging nations, youth, and women.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="box has-style2" data-aos="fade-up" data-aos-duration="4000">
+                                        <div class="box-icon">
+                                            <i class="ri-focus-2-line"></i>
+                                        </div>
+                                        <h4 class="box-title"> Creating An Impact
+
+                                        </h4>
+                                        <p class="box-desc">
+                                            We tend to maximize our efforts when we find people with extraordinary ideas
+                                            or vice versa.
+                                            We move decisively, and focus our capital on supporting and investing in the
+                                            shared future
+                                            of tomorrow. Our funds centre around two macro themes: the growth of the
+                                            creative class, and
+                                            the concept of the collaborative economy.
+                                            These two forces present a significant opportunity for new technologies,
+                                            products, and
+                                            services to transform how we do business and the way we live.
+                                        </p>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="box has-style2" data-aos="fade-up" data-aos-duration="4000">
+                                        <div class="box-icon">
+                                            <i class="ri-star-line"></i>
+                                        </div>
+                                        <h4 class="box-title"> Our Investment Philosophy
+
+                                        </h4>
+                                        <p class="box-desc">
+                                            We believe in active, engaged, and responsible investment management that
+                                            drives young entrepreneurs towards more socially responsible, ethical, and
+                                            sustainable practices.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section-steps pt-0 is-sm">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title is-center ">Process of Approval</h2>
+                <!-- <p class="section-desc max-30 is-center">Tired of secretive bids? Our platform provides
+                    a transparent rental auction with the ability to submit custom offers.
+                </p> -->
+            </div>
+            <div class="row min-30 align-items-center">
+                <div class="col-lg-6 mt-20 mb-20">
+                    <div class="steps_block overflow-hidden ">
+                        <div class="step1" data-aos="fade-left" data-aos-duration="4000">
+                            <div class="d-flex align-items-center">
+                                <div class="ellipse ">
+                                    <p class="num">1</p>
+                                </div>
+                                <h4 class="title">Apply</h4>
+                            </div>
+                            <p class="description">
+                                Fill the Google Form correctly.
+                            </p>
+                        </div>
+                        <div class="step2" data-aos="fade-left" data-aos-duration="3000">
+                            <div class="d-flex align-items-center">
+                                <div class="ellipse ">
+                                    <p class="num">2</p>
+                                </div>
+                                <h4 class="title">Committee</h4>
+                            </div>
+                            <p class="description">
+                                Application goes to our Membership Committee
+                            </p>
+                        </div>
+                        <div class="step3" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="d-flex align-items-center">
+                                <div class="ellipse ">
+                                    <p class="num">3</p>
+                                </div>
+                                <h4 class="title">Review</h4>
+                            </div>
+                            <p class="description">
+                                Committee Review collbrative information, applicant affiliations, and investment
+                                accreditation.
+                            </p>
+                        </div>
+                        <div class="step4" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="d-flex align-items-center">
+                                <div class="ellipse ">
+                                    <p class="num">4</p>
+                                </div>
+                                <h4 class="title">Approval</h4>
+                            </div>
+                            <p class="description mb-0">
+                                If your idea and vision really has the potential to transform the world, We'll help you
+                                turn it into reality.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6">
+                    <img class="img_center" src="assets/images/about-cta.svg" alt="" data-aos="fade-up"
+                        data-aos-duration="3000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="section is-sm section-yellow">
+        <div class="container">
+            <div class="app_block">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h2 class="text-white section-title" style="text-align:center"></h2>
+                        <p class="section-desc text-white">
+                           
+                        </p>
+                        <div class="justify-content-center justify-content-md-start">
+
+                            <a href="raise.html" class="btn btn-orange" data-aos="fade-up" data-aos-delay="400">
+                                Get Started &nbsp; <i class="fas-animate fas fa-long-arrow-alt-right"
+                                    aria-hidden="true"></i><span style="padding-top: 1px;position: fixed;">
+
+                                </span>
+                            </a>
+
+                        </div>
+                    
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="section is-sm py-0 blog ">
+        <div class="col-lg-12 px-0 row__feature_join">
+            <div class="col-lg-12">
+                <h1 class="text-white aos-init aos-animate mb-2" data-aos="fade-up" data-aos-delay="250">Ready to take first step?
+                </h1>
+                <p class="text-white text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="350">
+                    Every big idea starts with a small step forward.
+                </p>
+                <div class="text-center mt-4 overflow-hidden">
+                    <!-- <a href="about.html" class="btn btn-orange aos-init aos-animate" style="border: 1px solid #ff8c18"
+                        data-aos="fade-right" data-aos-delay="250"> Know More </a> -->
+
+                        <a href="raise.html" class="btn btn-orange" data-aos="fade-up" data-aos-delay="400">
+                            Get Started &nbsp; <i class="fas-animate fas fa-long-arrow-alt-right"
+                                aria-hidden="true"></i><span style="padding-top: 1px;position: fixed;">
+
+                            </span>
+                        </a>
+                        
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- =========================== Footer-->
+    <footer class="footer has-style1">
+
+
+        <div class="footer-body">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="footer-desc">
+                            <div class="logo">
+                                <h3 class="text-white">NathFamily</h3>
+                            </div>
+                            <p class="text-white">We founded Nath Family Trust Fund with the strong belief that
+                                exceptional
+                                talent can come from anywhere in the world, and it's a belief that remains
+                                deep-rooted
+                                in our DNA and in our actions. </p>
+                            <div class="social-footer">
+                                <a class="text-white" href="#"><i class="fas fa-envelope-open">&nbsp;&nbsp;</i><a
+                                        style="color: white" href="mailto:info@sfmc.us">info@sfmc.us</a>
+                                    <!-- <a class="text-white" href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i></a>
+                            <a class="text-white" href="#"><i class="fab fa-linkedin-in">&nbsp;&nbsp;</i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h6 class="list-title">Company</h6>
+                        <ul class="list-items">
+                            <li> <a href="about.html">About</a> </li>
+                            <li> <a href="contact.html">Contact Us</a> </li>
+                            <!-- <li> <a href="#">Contact us</a> </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-6">
+                        <h6 class="list-title">Userful Links</h6>
+                        <ul class="list-items">
+                            <li> <a href="raise.html">Raise Funds</a> </li>
+                            <li> <a href="event.html">Events</a> </li>
+                            <!-- <li> <a href="#">Cookies</a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright text-center "> Copyright © 2022 | Nath Family Trust Fund | All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ====================================== js files  -->
+    <script src="assets/js/plugins/jQuery.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/typed.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+
+    <script src="https://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+
+
+
+    <script src="assets/js/main.js"></script>
+
+
     <script>
-      var preLoader = document.getElementById('loader');
-      setTimeout(function() {
-        preLoader.style.display = 'none'
-    }, 1500);
+        var preLoader = document.getElementById('loader');
+        setTimeout(function () {
+            preLoader.style.display = 'none'
+        }, 3000);
     </script>
+
+
+    <!-- <script>
+        // ============================ 3/ call the slick functions
+        $('.client_slick').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+
+        });
+    </script> -->
+
+    <script>
+        $(function () {
+            AOS.init();
+        });
+    </script>
+
 </body>
+
+
 </html>
