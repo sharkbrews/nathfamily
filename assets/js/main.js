@@ -17,7 +17,7 @@ $(function () {
         $(".menu-toggle-icon").on("click", function () {
             $(".mb-overlay").addClass("mb-visible");
         });
-        $(".mb-overlay-bg , .close-mb-menu").on("click", function () {
+        $(".mb-overlay-bg , .c").on("click", function () {
             $(".mb-overlay").removeClass("mb-visible");
         });
 

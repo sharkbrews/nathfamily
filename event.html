@@ -28,6 +28,25 @@
 </head>
 <!-- <body class="content_body_green"> -->
     
+
+    <style>
+        @media screen and (max-width:576px) {
+   
+
+  .hero.has_style1 .hero-wrap{
+    padding-top: 20px !important;
+  }
+}
+
+.hero_page.has_style2 {
+    background-color: #f7ede1;
+    background-image: url('assets/images/Hero_Pattern.svg');
+    background-position: center bottom;
+    background-size: auto;
+}
+    </style>
+
+
 <body class="content_body_green">
     <div id="loader"></div>
     <div class="mb_wrap">
@@ -35,11 +54,25 @@
             <div class="mb-overlay-bg"></div>
             <div class="mb-menu">
                 <div class="close">
-                    <ion-icon class="close-mb-menu" name="close-outline"></ion-icon>
+                    <!-- <ion-icon class="close-mb-menu" name="close-outline"></ion-icon> -->
+                     
+                        <i class="fas fa-minus-circle c" style="right: 16px;top: 36px;position: absolute;font-size: 30px;color: #00715d;"></i>
+                    
                 </div>
                 <!-- your list menu in mobile here -->
                 <ul>
-
+                    <div class="site-branding">
+                        <div class="site-title">
+                            <a href="index.html" data-aos="fade-right">
+                                <div class="logo">
+                                   <img src="assets/images/logo.png" style="display: block;margin: 0 auto;" width="100px" alt="logo">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+ 
+                   
                     <!-- ======================== top link -->
                     <li class="nav-item -0 has-submenu">
                         <a href="index.html" class="menu-link main-menu-link item-title " data-aos="fade-right"
@@ -70,19 +103,22 @@
                     </li>
                     <!-- ======================== top link -->
 
-                    <li>
-                        <!-- ============== link -->
-                        <a href="raise.html" class="btn btn-orange btn-sm d-none d-md-block" data-aos="fade-right"
-                            data-aos-delay="250"> Raise Funds </a>
-                    </li>
+                   
 
+                    <br>
+                 
+                        <div class="navbar-menu text-center">
+                            <a href="raise.html" class="btn btn-orange"
+                                data-aos="fade-right" data-aos-delay="250"> Raise Funds </a>
+                        </div>
+                     
                 </ul>
 
             </div>
         </div>
     </div>
     <!-- =========================== header-->
-    <div class="hero has_style1">
+    <div class="hero_page has_style2">
         <!-- ================================= header -->
         <div class="site-header has_link_dark">
             <header id="masthead" class="site-header header-3 both-types no-transition">
@@ -95,8 +131,8 @@
                                     <div class="site-title">
                                         <a href="index.html" data-aos="fade-right">
                                             <div class="logo">
-                                                <h3> NathFamily</h3>
-                                            </div>
+                                                <img src="assets/images/logo.png" class="mt-1" width="100px" alt="logo">
+                                             </div>
                                         </a>
                                     </div>
                                 </div>
@@ -184,35 +220,27 @@
             <div class="hero-wrap">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <div class="img_wrap" data-aos="fade-left" data-aos-delay="450">
-                            <img class="p-2 moveUpDown home__landing_img" src="assets/images/coming.png"
-                                alt="landing-image">
+                        <div class="" data-aos="fade-left" data-aos-delay="450">
+                            <img class="moveUpDown home__landing_img" src="assets/images/mobevents.png" width="100%" alt="landing-image">
 
                         </div>
                     </div>
 
-                    <div class="col-lg-6 verticle-center">
+                    <!-- <div class="col-lg-6 verticle-center">
                         <br>
                         <h4 data-aos="fade-right" data-aos-delay="350">
                             Stay put and keep watching this space !! <br>Something Awesome is
                         </h4> <br>
                         <h2 class="text-primary hero-title" data-aos="fade-right" data-aos-delay="300">
                             Coming Soon
-                            <!-- <br> <span class="typed"></span> -->
+                            
                         </h2>
                         <h4 data-aos="fade-right" data-aos-delay="350">
                           STAY TUNNED
                         </h4>
                         <br>
-                        <!-- <div class="d-flex justify-content-center justify-content-md-start  ">
-                            <a href="about.html" class="btn btn-primary " data-aos="fade-up" data-aos-delay="400">
-                                Know More &nbsp;&nbsp; <span style="
-                                padding-top: 1px;
-                                position: fixed;
-                            "><i class="mt-1 ri-arrow-right-line"></i></span>
-                            </a>
-                        </div> -->
-                    </div>
+                         
+                    </div> -->
                    
                 </div>
             </div>

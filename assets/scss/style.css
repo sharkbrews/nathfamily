@@ -157,6 +157,10 @@
   .mr-0-sm {
     margin-right: 0 !important
   }
+
+  .feauture_item{
+    margin-bottom: 20px !important;
+  }
 }
 
 .m-0 {
@@ -2365,7 +2369,7 @@ input[type=text]:focus {
 
 .site-header .site-branding .logo img,
 .site-header .site-branding .logo img.svg-logo {
-  max-height: 35px;
+  /* max-height: 35px; */
   display: inherit
 }
 
@@ -2373,7 +2377,8 @@ input[type=text]:focus {
 
   .site-header .site-branding .logo img,
   .site-header .site-branding .logo img.svg-logo {
-    max-height: 40px
+    /* max-height: 40px */
+    max-width: 70px;
   }
 }
 
@@ -3418,7 +3423,8 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 .mb_wrap .mb-menu li {
   text-align: left;
   line-height: 50px;
-  box-shadow: 0 13px 25px -17px rgba(45, 25, 82, .180392)
+  /* box-shadow: 0 13px 25px -17px rgba(45, 25, 82, .180392) */
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .mb_wrap .mb-menu li:last-child {
@@ -3756,8 +3762,40 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 
 @media screen and (max-width:768px) {
   .hero.has_style_deco .hero-wrap {
-    padding: 5rem 0 5rem
+    padding: 3rem 0 5rem
   }
+  .hero.has_style_deco .img_wrap img{
+    margin: 50px 0px 0px 0px !important;
+  }
+
+  .p-t{
+    padding-top: 10px !important;
+  }
+  
+  .f-t{
+    font-size: 18px !important;
+    text-align: justify !important;
+  }
+
+  .bg_back_wrap::before{
+    height: 100% !important;
+  }
+
+  .mx-5-new{
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+}
+
+.mx-5-new{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.f-t{
+  font-size: 30px;
+  color: black;
 }
 
 .hero.has_style_deco .hero-title {
@@ -4454,6 +4492,7 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
   .hero_page.has_style1 .title {
     font-size: 46px
   }
+ 
 }
 
 @media screen and (min-width:1600px) {
@@ -4627,7 +4666,21 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 
 @media screen and (max-width:576px) {
   .section .section-title {
-    font-size: 30px
+    font-size: 44px;
+  }
+  .awesome-feat-single h3{
+    font-size: 18px !important;
+  }
+
+  .plan-single .list__pricing{
+    text-align: left !important;
+    display: flex;
+  }
+
+
+  .hero.has_style_deco::before{
+    width: 100% !important;
+    height: 75vh !important;
   }
 }
 
@@ -4767,7 +4820,8 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 
 @media screen and (max-width:768px) {
   .section .section-desc {
-    margin: 20px 0
+    margin: 20px 0;
+    text-align: justify !important;
   }
 }
 
