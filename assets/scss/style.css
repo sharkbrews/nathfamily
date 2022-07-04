@@ -4666,7 +4666,7 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 
 @media screen and (max-width:576px) {
   .section .section-title {
-    font-size: 44px;
+    font-size: 38px;
   }
   .awesome-feat-single h3{
     font-size: 18px !important;
@@ -4680,7 +4680,11 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 
   .hero.has_style_deco::before{
     width: 100% !important;
-    height: 75vh !important;
+    height: 80vh !important;
+  }
+
+  .row__feature_join>div{
+     padding: 60px 20px !important;
   }
 }
 
