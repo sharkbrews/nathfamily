@@ -1050,17 +1050,6 @@ a.text-primary:hover {
   background: #0c162f
 }
 
-.no-js #loader {
-  display: none
-}
-
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0
-}
-
 .slick-dots {
   bottom: -2rem
 }
@@ -1855,6 +1844,18 @@ input[type=text]:focus {
   position: sticky;
   top: 40px
 }
+
+@media screen and (max-width:576px){ 
+  .img_effect {
+  width: 100%;
+  position: relative;
+  position: sticky;
+  top: 40px;
+  order: 2;
+}
+  
+}
+
 
 .img-top {
   border-radius: 10px;
@@ -3744,6 +3745,13 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
   border-radius: 0 0 0 30px
 }
 
+@media screen and (max-width:576px) {
+ .hero.has_style_deco::before {
+  display: none;
+  content: none;
+ }
+}
+
 .hero.has_style_deco .line-menu {
   background: #150d4c
 }
@@ -3837,7 +3845,14 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
   letter-spacing: -.5px;
   font-weight: 400;
   margin-bottom: 40px;
-  color: #14234b
+  color: #14234b;
+  
+}
+
+@media screen and (max-width:576px) {
+  .hero.has_style_deco .hero-desc {
+    text-align: center;
+  }
 }
 
 .hero.has_style_deco .img_wrap {
@@ -3854,6 +3869,16 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
     margin-top: 20px;
     width: 100%;
     max-width: 100%
+  }
+}
+
+@media screen and (max-width:576px) {
+  .home-section-grey-content {
+    order: 1;
+  }
+
+  .home-section-grey-img {
+    order: 2;
   }
 }
 
@@ -4652,6 +4677,21 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
   }
 }
 
+
+@media screen  and (min-width:576px) {
+  .section-title-head {
+  font-size: calc(40px + 14 * ((100vw - 576px)/ 1024));
+  max-width: 100%;
+  color: #2d3a58;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+}
+
+
 @media screen and (max-width:992px) {
   .section .section-title {
     font-size: 40px
@@ -4666,7 +4706,8 @@ body:not(.is-mobile-menu).with-header-6 .clb-back-link {
 
 @media screen and (max-width:576px) {
   .section .section-title {
-    font-size: 38px;
+    font-size: 32px;
+    text-align: center;
   }
   .awesome-feat-single h3{
     font-size: 18px !important;
